@@ -16,7 +16,7 @@ function Navbar() {
           <li><a href='#about' className='hover:text-orange-400 transition before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500'>About</a></li>
           <li><a href='#contact' className='hover:text-orange-400 transition before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500'>Contact</a></li>
         </ul>
-        <button className='bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-gradient-to-l from-orange-600 to-orange-400 transition border-2 border-orange-300 hover:scale-105 duration-200 shadow-2xl flex items-center gap-2'>Order Now
+        <button className='bg-linear-to-r from-orange-400 to-orange-500 text-white font-bold py-2 px-4 rounded-full hover:from-orange-500 hover:to-orange-600 transition border-2 border-orange-300 hover:scale-105 duration-200 shadow-2xl flex items-center gap-2'>Order Now
           <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer' />
         </button>
       </div>
