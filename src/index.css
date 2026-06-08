@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
+
 @variant dark (&:where(.dark, .dark *));
 
 /* Dark mode text with orange outline */

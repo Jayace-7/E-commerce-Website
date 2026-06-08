@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import darkModeIcon from '../assets/darkmode.png';
 import lightModeIcon from '../assets/lightmode.png';
 
+// (No-op comment kept intentionally)
+
+
+
 export default function DarkMode() {
   const [isDark, setIsDark] = useState(() => {
     return localStorage.getItem('theme') === 'dark';
@@ -25,9 +29,19 @@ export default function DarkMode() {
       aria-label="Toggle dark mode"
     >
       {isDark ? (
-        <img src={darkModeIcon} alt="Dark mode icon" className="w-8 h-8" />
+        <img
+          src={darkModeIcon}
+          alt="Dark mode icon"
+          className="w-8 h-8"
+          draggable={false}
+        />
       ) : (
-        <img src={lightModeIcon} alt="Light mode icon" className="w-8 h-8" />
+        <img
+          src={lightModeIcon}
+          alt="Light mode icon"
+          className="w-8 h-8"
+          draggable={false}
+        />
       )}
     </button>
   );

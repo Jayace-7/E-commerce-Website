@@ -8,15 +8,36 @@ function Navbar() {
     <nav className='bg-white dark:bg-gray-900 text-orange-700 p-4 fixed top-0 z-50 border-b border-orange dark:border-orange-500 shadow-lg w-full py-3 sm:py-0'>
       <div className='flex justify-between items-center px-6 max-w-7xl mx-auto'>
         <div>
-          <a href="#" className='flex items-center gap-2 font-bold text-2xl sm:text-3xl text-outline-orange'>
+          <a href="#" className='flex items-center gap-2 font-bold text-2xl sm:text-3xl text-outline-orange text'>
             <img src={logo} alt="Logo" className='h-16 w-16' />Classic Food
           </a>
         </div>
         <div className='flex items-center gap-4'>
           <ul className='flex gap-6 font-semibold text-lg pr-12 text-outline-orange'>
-            <li><a href='#home' className='hover:text-orange-400 dark:hover:text-orange-300 transition before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500'>Home</a></li>
-            <li><a href='#about' className='hover:text-orange-400 dark:hover:text-orange-300 transition before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500'>About</a></li>
-            <li><a href='#contact' className='hover:text-orange-400 dark:hover:text-orange-300 transition before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500'>Contact</a></li>
+            <li>
+              <a
+                href='#home'
+                className='transition-all hover:text-orange-400 dark:hover:text-orange-300 hover:scale-105 before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500 dark:text-outline-orange'
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href='#about'
+                className='transition-all hover:text-orange-400 dark:hover:text-orange-300 hover:scale-105 before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500 dark:text-outline-orange'
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href='#contact'
+                className='transition-all hover:text-orange-400 dark:hover:text-orange-300 hover:scale-105 before:content-[""] before:w-2 before:h-2 before:bg-orange-400 before:rounded-full before:mr-2 before:inline-block hover:before:bg-orange-500 dark:text-outline-orange'
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
         <div className='flex items-center gap-4'>
