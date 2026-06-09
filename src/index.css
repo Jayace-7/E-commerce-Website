@@ -7,7 +7,7 @@
 .dark .text-outline-orange {
   color: white;
   -webkit-text-stroke: 1.5px #ff8c00;
-  text-stroke: 1.5px #ff8c00;
+ 
 }
 
 /* the rest of your existing css below */
