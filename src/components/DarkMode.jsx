@@ -25,7 +25,7 @@ export default function DarkMode() {
   return (
     <button
       onClick={() => setIsDark(!isDark)}
-      className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-200 dark:bg-white text-orange-400 dark:text-yellow-400 transition-all duration-300 hover:bg-orange-400 dark:hover:bg-gray-600 hover:shadow-lg hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+      className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-white text-orange-400 dark:text-yellow-400 transition-all duration-300 hover:bg-orange-400 dark:hover:bg-gray-600 hover:shadow-lg hover:scale-110 border-orange-400 cursor-pointer border-2 border-solid dark:border-orange-400"
       aria-label="Toggle dark mode"
     >
       {isDark ? (
