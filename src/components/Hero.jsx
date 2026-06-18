@@ -27,7 +27,7 @@ function Hero() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % imagelist.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
