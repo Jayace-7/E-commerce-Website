@@ -38,7 +38,7 @@ function Navbar() {
         <div className='flex items-center gap-4'>
           <DarkMode />
           <button className='bg-linear-to-r from-orange-400 to-orange-500 dark:from-white dark:to-gray-100 text-white dark:text-orange-600 font-bold py-2 px-4 rounded-full hover:from-orange-500 hover:to-orange-600 dark:hover:from-gray-100 dark:hover:to-gray-200 transition-all duration-300 border-2 border-orange-300 dark:border-orange-400 hover:scale-105 shadow-2xl flex items-center gap-2 cursor-pointer'>
-            Order Now
+            Order
             <FaCartShopping className='text-xl drop-shadow-sm cursor-pointer' />
           </button>
         </div>
