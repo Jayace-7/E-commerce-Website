@@ -43,8 +43,8 @@ function Hero() {
         }}
         className="min-h-screen mt-4 sm:mt-0 rounded-lg shadow-lg overflow-hidden"
       >
-        <div className="container h-full py-8 sm:py-0">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center min-h-screen">
+        <div className="container h-full py-8 sm:py-0 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center min-h-screen ">
 
             {/* ── LEFT: Text ── */}
             <div className="flex flex-col justify-center items-start text-left gap-4 order-2 sm:order-1 pl-6 sm:pl-12 lg:pl-16">
@@ -96,7 +96,7 @@ function Hero() {
                       transition-all duration-500
                       ${activeIndex === idx
                         ? 'w-24 h-24 border-orange-500 opacity-100 shadow-lg shadow-orange-400'
-                        : 'w-16 h-16 border-white opacity-50'
+                        : 'w-20 h-20 border-white opacity-50'
                       }
                     `}
                   >
