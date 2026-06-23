@@ -41,7 +41,7 @@ function Service() {
               { /* ── Circular image, overlapping the card above ── */}
               {/* Increased again, now w-44/sm:w-56 (11rem mobile, 14rem
                   desktop) — noticeably bigger food photo. */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden transition-transform duration-500 group-hover:-translate-y-3">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden transition-transform duration-500 group-hover:-translate-y-3 cursor-pointer">
                 <img
                   src={service.image}
                   alt={service.name}
