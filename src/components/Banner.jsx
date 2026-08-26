@@ -1,4 +1,3 @@
-import React from 'react';
 import spag from '../assets/spag.png';
 import { Lock, Salad, Truck } from 'lucide-react';
  
