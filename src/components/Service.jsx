@@ -1,4 +1,3 @@
-import React from 'react';
 import rice from '../assets/rice.png';
 import spag from '../assets/spag.png';
 import ppsoup from '../assets/pp-soup.png';

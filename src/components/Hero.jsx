@@ -62,16 +62,16 @@ function Hero() {
             </div>
 
             {/* ── RIGHT: Food image + thumbnails ── */}
-            <div className="order-1 sm:order-2 relative flex justify-center items-center min-h-125">
+            <div className="order-1 sm:order-2 relative flex items-center justify-center min-h-112 sm:min-h-128 lg:min-h-144 pr-6 sm:pr-10 lg:pr-14">
 
               {/* ── GLOW SHADOW BEHIND THE FOOD ── */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0
-                              w-708h-70-[360px] sm:h-90 lg:w-105 lg:h-105
+                              w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96
                               bg-orange-400 opacity-40 rounded-full blur-3xl" />
 
               {/* ── MAIN FOOD IMAGE ── */}
               <div className="relative z-10
-                              w-70 h-70 sm:w-90 sm:h-90 lg:w-105 lg:h-105
+                              w-60 h-60 sm:w-72 sm:h-72 lg:w-80 lg:h-80
                               flex items-center justify-center">
                 <img
                   key={activeIndex}
@@ -87,7 +87,7 @@ function Hero() {
                 * is currently displayed. No onClick needed.
                 * pointer-events-none prevents any accidental clicks.
                 * ─────────────────────────────────────────────────── */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4 pr-2 pointer-events-none">
+              <div className="absolute right-0 sm:right-2 lg:right-4 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-3 pointer-events-none">
                 {imagelist.map((item, idx) => (
                   <div
                     key={idx}
@@ -95,8 +95,8 @@ function Hero() {
                       rounded-full border-2 overflow-hidden
                       transition-all duration-500
                       ${activeIndex === idx
-                        ? 'w-24 h-24 border-orange-500 opacity-100 shadow-lg shadow-orange-400'
-                        : 'w-20 h-20 border-white opacity-50'
+                        ? 'w-16 h-16 border-orange-500 opacity-100 shadow-lg shadow-orange-400 sm:w-18 sm:h-18 lg:w-20 lg:h-20'
+                        : 'w-12 h-12 border-white opacity-50 sm:w-14 sm:h-14 lg:w-16 lg:h-16'
                       }
                     `}
                   >

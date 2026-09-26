@@ -1,4 +1,4 @@
-import React from 'react';
+
 import logo from '../assets/food-logo.png';
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from './DarkMode';
