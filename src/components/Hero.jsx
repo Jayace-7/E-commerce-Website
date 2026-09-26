@@ -33,7 +33,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="bg-white dark:bg-gray-950 transition-colors duration-300">
+    <section id="home" className="bg-white dark:bg-gray-950 transition-colors duration-300">
       <div
         style={{
           backgroundImage: `url(${bg})`,

@@ -3,6 +3,13 @@ import logo from '../assets/food-logo.png';
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from './DarkMode';
 
+const navLinks = [
+  { label: 'home', href: '#home' },
+  { label: 'about', href: '#about' },
+  { label: 'contact', href: '#contact' },
+  { label: 'testimonials', href: '#testimonials' },
+];
+
 function Navbar() {
   return (
     <nav className='bg-white dark:bg-gray-900 text-orange-700 dark:text-white p-4 sticky top-0 z-50 border-b border-orange dark:border-orange-500 shadow-lg w-full py-3 sm:py-0 transition-colors duration-300'>
@@ -22,12 +29,13 @@ function Navbar() {
         {/* Nav Links */}
         <div className='flex items-center gap-4'>
           <ul className='flex gap-6 font-semibold text-lg pr-12'>
-            {['home', 'about', 'contact'].map((item) => (
-              <li key={item}>
+            {navLinks.map(({ label, href }) => (
+              <li key={label}>
                 <a
-                  href={`#${item}`}
-                 className='capitalize inline-block transition-all duration-300 text-orange-700 dark:text-white hover:text-orange-400 dark:hover:text-orange-300 hover:scale-105 before:content-[""] before:inline-block before:w-2 before:h-2 before:rounded-full before:mr-2 before:bg-orange-400 dark:before:bg-white hover:before:bg-orange-500 dark:hover:before:bg-orange-300 dark:[text-shadow:0_0_2px_#f97316,0_0_8px_#f97316]'  >
-                  {item}
+                  href={href}
+                  className='capitalize inline-block transition-all duration-300 text-orange-700 dark:text-white hover:text-orange-400 dark:hover:text-orange-300 hover:scale-105 before:content-[""] before:inline-block before:w-2 before:h-2 before:rounded-full before:mr-2 before:bg-orange-400 dark:before:bg-white hover:before:bg-orange-500 dark:hover:before:bg-orange-300 dark:[text-shadow:0_0_2px_#f97316,0_0_8px_#f97316]'
+                >
+                  {label}
                 </a>
               </li>
             ))}

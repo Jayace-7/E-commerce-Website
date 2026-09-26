@@ -1,8 +1,10 @@
-import React from 'react';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Service from './components/Service';
 import Banner from './components/Banner';
+import Download from './components/Download';
+import Testimonial from './components/Testimonial';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -11,6 +13,9 @@ const App = () => {
       <Hero />
       <Service />
       <Banner />
+      <Download />
+      <Testimonial />
+      <Footer />
     </div>
   );
 };

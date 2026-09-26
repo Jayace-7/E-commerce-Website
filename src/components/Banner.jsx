@@ -3,7 +3,7 @@ import { Lock, Salad, Truck } from 'lucide-react';
  
 function Banner() {
   return (
-    <section className="py-16 bg-white dark:bg-gray-800">
+    <section id="about" className="py-16 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           {/* Image */}
